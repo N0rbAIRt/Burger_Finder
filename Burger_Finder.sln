@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Burger_Finder", "Burger_Finder\Burger_Finder.csproj", "{EBA4C821-77F0-48A6-B2EC-E849C6FF8514}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBA4C821-77F0-48A6-B2EC-E849C6FF8514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBA4C821-77F0-48A6-B2EC-E849C6FF8514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBA4C821-77F0-48A6-B2EC-E849C6FF8514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBA4C821-77F0-48A6-B2EC-E849C6FF8514}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2C0D045-127C-4732-B242-8DD0ACEC2294}
+	EndGlobalSection
+EndGlobal
