@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace Burger_Finder.Models
 {
-    public class Account
+    public class LoginModel
     {
-        public string Name { get; set; }
+        public string email { get; set; }
 
-        public string Pwd { get; set; }
+        public string password { get; set; }
     }
 }

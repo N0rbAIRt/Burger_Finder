@@ -118,9 +118,9 @@ img {
     min-height: 100vh;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="Password"] {
+input[type="text"], input[type="fName"],
+input[type="lName"], input[type="phone"],
+input[type="email"], input[type="passwrd"] {
     font-size: 17px;
     font-weight: 500;
     color: #999;
@@ -257,6 +257,7 @@ h1 {
 
 .w3l-form-info {
     margin: 40px 0;
+    opacity: 90%;
 }
 
 

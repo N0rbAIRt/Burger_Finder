@@ -1,0 +1,73 @@
+﻿@model Burger_Finder.Models.AccountModel
+
+<h1 style="color:white; margin-top:5%;">@ViewData["Title"]</h1>
+
+<head>
+    <title href="https://burgerfinderv1.azurewebsites.net">Burger Finder - Registration</title>
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="~/css/login-style.css" type="text/css" media="all" />
+
+</head>              
+
+<body style="background-image: url('../assets/img/header-bg.jpg');background-repeat: no-repeat;background-size: 120%;">
+    <div class="signinform">
+        <!-- container -->
+        <div class="container">
+            <!-- main content -->
+            <div class="w3l-form-info" style="opacity: 90%;">
+                <div class="w3_info">
+                    <h2>Registration</h2>
+                    <form asp-action="Login">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="input-group">
+                            <label class="control-label"></label>
+                            <input asp-for="fName" class="form-control" type="email" placeholder="First Name" />
+                            <span asp-validation-for="fName" class="text-danger"></span>
+                        </div>
+                        <div class="input-group">
+                            <label class="control-label"></label>
+                            <input asp-for="lName" class="form-control" type="email" placeholder="Last Name" />
+                            <span asp-validation-for="lName" class="text-danger"></span>
+                        </div>
+                        <div class="input-group">
+                            <label class="control-label"></label>
+                            <input asp-for="Phone" class="form-control" type="email" placeholder="Phone" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+                        <div class="input-group">
+                            <label class="control-label"></label>
+                            <input asp-for="Email" class="form-control" type="email" placeholder="Email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="input-group">
+                            <label class="control-label"></label>
+                            <input asp-for="Pwd" class="form-control" type="password" placeholder="Password" />
+                            <span asp-validation-for="Pwd" class="text-danger"></span>
+                        </div>
+                        <div>
+                            <input type="submit" value="Login" class="btn btn-primary btn-block" />
+                        </div>
+                        <p class="account">Don't have an account? <a href="Registration">Sign up</a></p>
+                    </form>
+                </div>
+            </div>
+            <!-- fontawesome v5-->
+            <script src="~/js/fontawesome.js"></script>
+        </div>
+    </div>
+
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+
+</body>
