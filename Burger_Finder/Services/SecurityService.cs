@@ -8,7 +8,7 @@ namespace Burger_Finder.Services
 {
     public class SecurityService
     {
-        UsersDbService usersDb = new UsersDbService();
+        DatabaseService usersDb = new DatabaseService();
 
         public SecurityService()
         {

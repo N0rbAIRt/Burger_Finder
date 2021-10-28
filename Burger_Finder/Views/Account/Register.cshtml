@@ -26,37 +26,37 @@
             <div class="w3l-form-info" style="opacity: 90%;">
                 <div class="w3_info">
                     <h2>Registration</h2>
-                    <form asp-action="Login">
+                    <form asp-action="processReg">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                         <div class="input-group">
                             <label class="control-label"></label>
-                            <input asp-for="fName" class="form-control" type="email" placeholder="First Name" />
+                            <input asp-for="fName" class="form-control" type="text" placeholder="First Name" />
                             <span asp-validation-for="fName" class="text-danger"></span>
                         </div>
                         <div class="input-group">
                             <label class="control-label"></label>
-                            <input asp-for="lName" class="form-control" type="email" placeholder="Last Name" />
+                            <input asp-for="lName" class="form-control" type="text" placeholder="Last Name" />
                             <span asp-validation-for="lName" class="text-danger"></span>
                         </div>
                         <div class="input-group">
                             <label class="control-label"></label>
-                            <input asp-for="Phone" class="form-control" type="email" placeholder="Phone" />
-                            <span asp-validation-for="Phone" class="text-danger"></span>
+                            <input asp-for="phone" class="form-control" type="text" placeholder="Phone" />
+                            <span asp-validation-for="phone" class="text-danger"></span>
                         </div>
                         <div class="input-group">
                             <label class="control-label"></label>
-                            <input asp-for="Email" class="form-control" type="email" placeholder="Email" />
-                            <span asp-validation-for="Email" class="text-danger"></span>
+                            <input asp-for="email" class="form-control" type="email" placeholder="Email" />
+                            <span asp-validation-for="email" class="text-danger"></span>
                         </div>
                         <div class="input-group">
                             <label class="control-label"></label>
-                            <input asp-for="Pwd" class="form-control" type="password" placeholder="Password" />
-                            <span asp-validation-for="Pwd" class="text-danger"></span>
+                            <input asp-for="password" class="form-control" type="password" placeholder="Password" />
+                            <span asp-validation-for="password" class="text-danger"></span>
                         </div>
                         <div>
-                            <input type="submit" value="Login" class="btn btn-primary btn-block" />
+                            <input type="submit" value="Registration" class="btn btn-primary btn-block" />
                         </div>
-                        <p class="account">Don't have an account? <a href="Registration">Sign up</a></p>
+                        <p class="account">Do you already have an account? <a href="~/Login/Login">LogIn</a></p>
                     </form>
                 </div>
             </div>

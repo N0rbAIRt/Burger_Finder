@@ -20,5 +20,12 @@ namespace Burger_Finder.Controllers
         {
             return View();
         }
+
+        public IActionResult processReg(AccountModel acc)
+        {
+            DatabaseService insert = new DatabaseService();
+            insert.createAccount(acc);
+            return View("SuccessReg", acc);
+        }
     }
 }

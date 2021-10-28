@@ -11,10 +11,10 @@ namespace Burger_Finder.Models
 
         public string lName { get; set; }
 
-        public string Phone { get; set; }
+        public string phone { get; set; }
 
-        public string Email { get; set; }
+        public string email { get; set; }
 
-        public string Pwd { get; set; }
+        public string password { get; set; }
     }
 }
