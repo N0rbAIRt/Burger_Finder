@@ -11,7 +11,13 @@ namespace Burger_Finder.Services
     {
         string ConnectionString = @"Server = tcp:burger-v1.database.windows.net,1433;Initial Catalog = Users; Persist Security Info=False;User ID = Kismazsy; Password=Alabama801; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout = 30;";
 
-        //Find the user by email, password and validate
+        /// <summary>
+        /// Searching the LoginModel in the Database where the email and the password is matching.
+        /// If there is a record with these creditentials then give back a true value.
+        /// If the request has come back with zero rows then give a false value.
+        /// </summary>
+        /// <param name="acc" type="LoginModel"></param>
+        /// <returns>bool value</returns>
         public bool findUser(LoginModel acc)
         {
             bool success = false;
@@ -43,7 +49,10 @@ namespace Burger_Finder.Services
             return success;
         }
 
-        //Create user profile in the SQLDatabase
+        /// <summary>
+        /// The given parameters from the AccountModel this function insert all the information to the database.
+        /// </summary>
+        /// <param name="acc"></param>
         public void createAccount(AccountModel acc)
         {
             string sqlQuery = "INSERT INTO dbo.Users (FirstName, LastName, Phone, Email, Password) VALUES (@fName, @lName, @phone, @email, @password)";
@@ -69,7 +78,10 @@ namespace Burger_Finder.Services
             }
         }
 
-        //Create restarant in the SQLDatabase
+        /// <summary>
+        /// The given parameters from the RestaurantModel this function insert all the information to the database.
+        /// </summary>
+        /// <param name="rest"></param>
         public void createRestaurant(RestaurantModel rest)
         {
             string sqlQuery = "INSERT INTO dbo.Restaurant (Name, Location, Star, Picture, Comment) VALUES (@Name, @Location, @Star, @Picture, @Comment)";

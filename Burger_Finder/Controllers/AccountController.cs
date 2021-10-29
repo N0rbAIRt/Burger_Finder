@@ -21,6 +21,13 @@ namespace Burger_Finder.Controllers
             return View();
         }
 
+        /// <summary>
+        /// This function get the Account data (FirstName, LastName, Phone, Email, Password)
+        /// from the webpage "~/Account/Register" and forwarding to the database and save there.
+        /// After the database insertion done, you get the SuccessReg view and prompted the Login befor continue.
+        /// </summary>
+        /// <param name="acc" type="AccountModel"></param>
+        /// <returns>View("SuccessReg")</returns>
         public IActionResult processReg(AccountModel acc)
         {
             DatabaseService insert = new DatabaseService();

@@ -14,7 +14,12 @@ namespace Burger_Finder.Controllers
         {
             return View();
         }
-
+        /// <summary>
+        /// This function get the (Email and Password) from the "~/Login/Login"
+        /// and forward to the SecurityService which will gvie a true or false value.
+        /// </summary>
+        /// <param name="acc" type="LoginModel"></param>
+        /// <returns>View("SuccessLogin"); or return View("FailedLogin");</returns>
         public IActionResult processLogin(LoginModel acc)
         {
             SecurityService securityService = new SecurityService();
